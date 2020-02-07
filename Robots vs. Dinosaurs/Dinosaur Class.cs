@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    class Dinosaur
+    class DinosaurClass
     {
-        public class dinosaur
+        public class Dinosaur
         {
             //member variables
             public string name;

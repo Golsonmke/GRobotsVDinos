@@ -10,7 +10,7 @@ namespace Robots_vs.Dinosaurs
     {
         static void Main(string[] args)
         {
-            RunDinosaursVsRobots();
+            
         }
     }
 }
