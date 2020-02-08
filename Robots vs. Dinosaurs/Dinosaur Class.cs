@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    class DinosaurClass
-    {
+ 
         public class Dinosaur
         {
             //member variables
@@ -20,11 +19,11 @@ namespace Robots_vs.Dinosaurs
             //constructor
             public Dinosaur(string name, int health, int energyLevel, int attackPower, int specialAttack)
             {
-                this.name = name;
-                this.health = health;
-                this.energyLevel = energyLevel;
-                this.attackPower = attackPower;
-                this.specialAttack = specialAttack;
+               this.name = name;
+               this.health = health;
+               this.energyLevel = energyLevel;
+               this.attackPower = attackPower;
+               this.specialAttack = specialAttack; 
             }
 
 
@@ -46,6 +45,4 @@ namespace Robots_vs.Dinosaurs
                 specialAttack = 100;
             }
         }
-
-    }
 }

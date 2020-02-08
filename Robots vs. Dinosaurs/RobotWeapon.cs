@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    class RobotWeapon
-    {
+   
         public class Weapon
         {
             //member variables
@@ -43,5 +42,5 @@ namespace Robots_vs.Dinosaurs
             }
                 
         }
-    }
+    
 }

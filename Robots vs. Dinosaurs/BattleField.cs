@@ -8,14 +8,16 @@ namespace Robots_vs.Dinosaurs
 {
     class BattleField
     {
-        public BattleField()
-        {
-            RobotClass bobTheButcher = new RobotClass("Bob the Butcher", 750, 25, 500, 75);
-        }
-    }
+        
+
         
 
         
 
     }
+        
+    
+        
+
+    
 }
