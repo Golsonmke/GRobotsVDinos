@@ -11,38 +11,24 @@ namespace Robots_vs.Dinosaurs
         public class DinoAttack
         {  
             //member variables
-            public int bite;
-            public int clawSwipe;
-            public int tailWhip;
-            public int stomp;
-             
+            public string bite;
+            public string clawSwipe;
+            public string tailWhip;
+           
+
 
             //constructor
-            public DinoAttack(int bite, int clawSwipe, int tailWhip, int stomp)
+            public DinoAttack()
             {
-                this.bite = bite;
-                this.clawSwipe = clawSwipe;
-                this.tailWhip = tailWhip;
-                this.stomp = stomp;
-            }
-            //member methods 
-            public void Bite()
-            {
-                bite = 50;
-            }
-            public void ClawSwipe()
-            {
-                clawSwipe = 25;
-            }
-            public void TailWhip()
-            {
-                tailWhip = 50;
-            }
-            public void Stomp()
-            {
-                stomp = 100;
+                List<string> dinoattacks = new List<string>() { "Bite", "Claw SWipe", "Tail Whip" };
+                
+                
             }
         }
+
+            //member methods 
+            
+        
     }
 
 }

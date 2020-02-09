@@ -6,43 +6,52 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
- 
-        public class Dinosaur
+
+   public class Dinosaur
+   {
+        //member variables
+        public string name;
+        public int health;
+        public int energyLevel;
+        public int attackPower;
+
+        
+
+
+        //constructor
+        public Dinosaur(string name, int health, int energyLevel , int attackPower)
         {
-            //member variables
-            public string name;
-            public int health;
-            public int energyLevel;
-            public int attackPower;
-            public int specialAttack;
+            name = "";
+            health = 500;
+            energyLevel = 500;
+            attackPower = 100;
 
-            //constructor
-            public Dinosaur(string name, int health, int energyLevel, int attackPower, int specialAttack)
-            {
-               this.name = name;
-               this.health = health;
-               this.energyLevel = energyLevel;
-               this.attackPower = attackPower;
-               this.specialAttack = specialAttack; 
-            }
+            Dinosaur godzilla = new Dinosaur("Godzilla", 500, 500, 100);
+            Dinosaur mothra = new Dinosaur("Mothra", 500, 500, 100);
+            Dinosaur kingGhdorah = new Dinosaur("King Ghidorah", 500, 500, 100);
+            
 
-
-            //member methods
-            public void Health()
-            {
-                health = 500;
-            }
-            public void EnergyLevel()
-            {
-                energyLevel = 500;
-            }
-            public void AttackPower()
-            {
-                attackPower = 50;
-            }
-            public void SpecialAttack()
-            {
-                specialAttack = 100;
-            }
         }
+
+        //member methods Can Do 
+
+
+        public void ChooseDinosaurAttack(List<string> dinoattacks)
+        {
+
+            Console.WriteLine(dinoattacks);
+            Console.ReadLine();
+        }   
+       
+        
+
+        
+
+
+
+
+
+
+   }   
+
 }

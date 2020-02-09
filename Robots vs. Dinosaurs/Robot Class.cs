@@ -16,15 +16,18 @@ namespace Robots_vs.Dinosaurs
             public int attackPower;
             public int powerLevel;
             public int specialAttack;
+            
 
             //constructor
-            public Robot(string name, int health, int attackPower, int powerLevel, int specialAttack)
+            public Robot(string name, int health, int attackPower, int powerLevel, int specialAttack, int damage)
             {
                this.name = name;
                this.health = health;
                this.attackPower = attackPower;
                this.powerLevel =  powerLevel;
                this.specialAttack = specialAttack;
+               
+
             }
 
             //member methods

@@ -39,7 +39,10 @@ namespace Robots_vs.Dinosaurs
         }
         public void RobotSpecialAttack()
         {
-
+            bobtheButcher.specialAttack = 100;
+            lazerLips.specialAttack = 75;
+            johnny5.specialAttack = 75;
+            exmachina.specialAttack = 75;
 
         }
         
