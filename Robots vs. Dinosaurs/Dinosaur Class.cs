@@ -7,51 +7,54 @@ using System.Threading.Tasks;
 namespace Robots_vs.Dinosaurs
 {
 
-   public class Dinosaur
-   {
+    public class Dinosaur
+    {
         //member variables
         public string name;
         public int health;
         public int energyLevel;
         public int attackPower;
-
+        public string choosAttack;
+        public bool isDead;
         
+         
+
+
+
 
 
         //constructor
-        public Dinosaur(string name, int health, int energyLevel , int attackPower)
+        public  Dinosaur(string name, int health, int energyLevel, int attackPower)
         {
-            name = "";
-            health = 500;
-            energyLevel = 500;
-            attackPower = 100;
+            this.name = name;
+            this.health = 500;
+            this.energyLevel = 500;
+            this.attackPower = 100;
+            this.isDead = false;
 
-            Dinosaur godzilla = new Dinosaur("Godzilla", 500, 500, 100);
-            Dinosaur mothra = new Dinosaur("Mothra", 500, 500, 100);
-            Dinosaur kingGhdorah = new Dinosaur("King Ghidorah", 500, 500, 100);
             
-
+            
         }
 
         //member methods Can Do 
 
 
-        public void ChooseDinosaurAttack(List<string> dinoattacks)
+        public void ChooseDinosaurAttack()
         {
 
-            Console.WriteLine(dinoattacks);
+            Console.WriteLine();
             Console.ReadLine();
-        }   
-       
-        
-
-        
+        }
 
 
 
 
 
 
-   }   
+
+
+
+
+    }
 
 }

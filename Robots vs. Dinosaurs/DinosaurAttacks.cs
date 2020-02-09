@@ -9,26 +9,33 @@ namespace Robots_vs.Dinosaurs
     class DinosaurAttacks
     {
         public class DinoAttack
-        {  
+        {
             //member variables
             public string bite;
             public string clawSwipe;
             public string tailWhip;
-           
+            public string stomp;
 
+            
 
             //constructor
             public DinoAttack()
             {
-                List<string> dinoattacks = new List<string>() { "Bite", "Claw SWipe", "Tail Whip" };
-                
-                
+                new List<string>().Add("Bite");
+                new List<string>().Add("Claw Swipe");
+                new List<string>().Add("Tail Whip");
+                new List<string>().Add("Stomp");
+
+                foreach (string dinoAttack in new List<string>())
+                {
+                    Console.WriteLine(dinoAttack);
+                }
             }
         }
 
-            //member methods 
-            
-        
+        //member methods 
+
+
     }
 
 }

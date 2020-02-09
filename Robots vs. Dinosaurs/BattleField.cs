@@ -8,79 +8,79 @@ namespace Robots_vs.Dinosaurs
 {
     class BattleField
     {
-        public Herd herd;
-        public Fleet fleet;
+        // member variable (Has A)
+        public Herd myHerd;
+        public Fleet myFleet;
         public bool isDead;
-        public string dinosaurs;
-        public string robots;
-        public string results;
+
         public BattleField()
         {
+            myHerd = new Herd();
+            myFleet = new Fleet();
             isDead = false;
 
-            
-            
-       
+
+
+
         }
         //Member Methods What Can the player do
-        public void StartGame()
+        public void SetUp()
         {
             Console.WriteLine("Long ago in a Galaxy far far far far away");
             Console.WriteLine("Worlds collide in a Battle for the ages!");
             Console.WriteLine("ROBOTS VS DINOSAURS!");
             Console.WriteLine("Press Enter to Start Game");
-            
 
-        
+
+
         }
 
         public void ChooseDinosaursOrRobots()
         {
 
 
-          
+
+        }
+        public void AttackRobots()
+        {
+            
+            
+
+        }
+        public void AttackDinosaurs()
+        {
+
+        }
+
+        public void GameOver()
+        {
+            
 
             
            
+                    
 
-           
-
-
-
-
+            
+            
 
         }
-        public void  AttackRobots(List<string> dinoattacks)
-        {
-            Console.WriteLine("Choose Attack" + dinoattacks);
-            Console.ReadLine();
-
-        }
-        public void AttackPlayerOne()
-        {
-
-        }
-
-        public void GameOver(string gameOver)
-        {
-         
-        }
-
         
 
 
-        
-        
 
 
-        
 
-        
+
+
+
+
+
+
 
     }
-        
-    
-        
 
-    
+
+
+
+
 }

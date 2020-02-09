@@ -6,52 +6,50 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    
-    
-        public class Robot
+
+
+    class Robot
+    {
+        //member variables (has A)
+        public string name;
+        public int health;
+        public int attackPower;
+        public int powerLevel;
+        public bool isDead;
+        
+
+        //constructor  (spawner)
+        public Robot(string name, int health, int attackPower, int powerLevel, bool isDead)
         {
-            //member variables
-            public string name;
-            public int health;
-            public int attackPower;
-            public int powerLevel;
-            public int specialAttack;
             
+            this.name = name;
+            this.health = health;
+            this.powerLevel = powerLevel;
+            this.attackPower = attackPower;          
+            this.isDead = false;
 
-            //constructor
-            public Robot(string name, int health, int attackPower, int powerLevel, int specialAttack, int damage)
-            {
-               this.name = name;
-               this.health = health;
-               this.attackPower = attackPower;
-               this.powerLevel =  powerLevel;
-               this.specialAttack = specialAttack;
-               
 
-            }
-
-            //member methods
-            public void Health()
-            {
-
-                health = 750;
-            }
-            public void AttackPower()
-            {
-
-                attackPower = 25;
-
-            }
-            public void PowerLevel()
-            {
-                powerLevel = 500;
-            }
-            public void SpecialAttack()
-            {
-                specialAttack = 75;
-            }
         }
+        
+        //member methods (Can Do)
+        public void ChooseWeapon()
+        {
+            
+            
+          
+            
+        }
+        public void ChooseWeaponAttack()
+        {
+            attackPower = 50;
+        }
+        public void TakeDamage()
+        {
+            
+        }
+        
+    }
 
 
-    
+
 }

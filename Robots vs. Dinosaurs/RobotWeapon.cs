@@ -6,41 +6,35 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-   
-        public class Weapon
+
+    public class Weapon
+    {
+        //member variables
+        public string lightSaber;
+        public string lazerGun;
+        public string flameThrower;
+        public string nukeBomb;
+
+        //constructor
+        public Weapon(string lightSaber, string lazerGun, string flameThrower, string nukeBomb)
         {
-            //member variables
-            public int lightSaber;
-            public int lazerGun;
-            public int flameThrower;
-            public int nukeBomb;
-            
-            //constructor
-            public Weapon(int lightSaber, int lazerGun, int flameThrower, int nukeBomb)
+
+            new List<string>().Add("Light Saber");
+            new List<string>().Add("Lazer gun");
+            new List<string>().Add("Flame Thrower");
+            new List<string>().Add("Nuke Bomb");
+
+            foreach (string weapon in new List<string>())
             {
-                this.lightSaber = lightSaber;
-                this.lazerGun = lazerGun;
-                this.flameThrower = flameThrower;
-                this.nukeBomb = nukeBomb;
+                Console.WriteLine(weapon);
             }
-            //member methods
-            public void LightSaber()
-            {
-                lightSaber = 25;
-            }
-            public void LazerGun()
-            {
-                lazerGun = 25;
-            }
-            public void FlameThrower()
-            {
-                flameThrower = 50;
-            }
-            public void NukeBomb()
-            {
-                nukeBomb = 100;
-            }
-                
         }
+
+    }
+        //member methods
+       
+        
+
     
+
 }
