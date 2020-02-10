@@ -6,32 +6,33 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    public class Herd
+    public class Herd 
     {
-        public string dinosaurTurn;
-        public bool wipedOut;
-        public string Dinosaurs;
-
-        public Herd()
+       
+        
+        
+        
+       
+        public  Herd()
         {
-            Dinosaur godzilla = new Dinosaur("Godzilla", 500, 500, 100);
-            Dinosaur mothra = new Dinosaur("Mothra", 500, 500, 100);
-            Dinosaur kingGhdorah = new Dinosaur("King Ghidorah", 500, 500, 100);
+            Dinosaur godZilla = new Dinosaur("GodZilla", "T-Rex", 600, 500, 75);
+            Dinosaur mothra = new Dinosaur("Mothra", "Pterodactyl", 400,500,50);
+            Dinosaur kingGhdorah = new Dinosaur("King Ghdoran", "Raptor", 500, 600, 50);
 
+            List<Dinosaur> dinosaurs = new List<Dinosaur>();
+            dinosaurs.Add(godZilla);
+            dinosaurs.Add(mothra);
+            dinosaurs.Add(kingGhdorah);
 
-        }
+            foreach(Dinosaur dinosaur in dinosaurs)
+            {
+                Console.WriteLine($"Dinosaur; {godZilla}");
+            }
 
-
-
-
-
-
-
-
-
-
-
-
+        } 
+        
+        
 
     }
+
 }

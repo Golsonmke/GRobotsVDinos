@@ -12,10 +12,8 @@ namespace Robots_vs.Dinosaurs
         static void Main(string[] args)
         {
             BattleField myBattleField = new BattleField();
-            myBattleField.StartGame();
-
-
-
+            myBattleField.RunGame();
+           
 
         }
     }

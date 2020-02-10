@@ -6,35 +6,35 @@ using System.Threading.Tasks;
 
 namespace Robots_vs.Dinosaurs
 {
-    class DinosaurAttacks
+    public class DinoAttack
     {
-        public class DinoAttack
+        string bite;
+        string clawSwipe;
+        string taiWhip;
+
+
+        //constructor
+        public DinoAttack()
         {
-            //member variables
-            public string bite;
-            public string clawSwipe;
-            public string tailWhip;
-            public string stomp;
+                DinoAttack bite = new DinoAttack();
+                DinoAttack clawSwipe = new DinoAttack();
+                DinoAttack tailWhip = new DinoAttack();
+                
 
-            
+                List<DinoAttack> dinoAttacks = new List<DinoAttack>();
+                dinoAttacks.Add(bite);
+                dinoAttacks.Add(clawSwipe);
+                dinoAttacks.Add(tailWhip);
+               
 
-            //constructor
-            public DinoAttack()
-            {
-                new List<string>().Add("Bite");
-                new List<string>().Add("Claw Swipe");
-                new List<string>().Add("Tail Whip");
-                new List<string>().Add("Stomp");
-
-                foreach (string dinoAttack in new List<string>())
-                {
-                    Console.WriteLine(dinoAttack);
-                }
-            }
+               
         }
+        
 
         //member methods 
-
+        
+        
+        
 
     }
 

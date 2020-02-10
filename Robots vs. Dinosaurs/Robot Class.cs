@@ -8,7 +8,7 @@ namespace Robots_vs.Dinosaurs
 {
 
 
-    class Robot
+   public class Robot 
     {
         //member variables (has A)
         public string name;
@@ -22,33 +22,42 @@ namespace Robots_vs.Dinosaurs
         public Robot(string name, int health, int attackPower, int powerLevel, bool isDead)
         {
             
-            this.name = name;
-            this.health = health;
-            this.powerLevel = powerLevel;
-            this.attackPower = attackPower;          
+            this.name = "Name";
+            this.health = 500;
+            this.powerLevel = 500;
+            this.attackPower = 100;          
             this.isDead = false;
 
 
         }
-        
+
+
         //member methods (Can Do)
         public void ChooseWeapon()
         {
-            
-            
-          
-            
+
+            foreach (string weapon in new List<string>())
+            {
+                Console.WriteLine(weapon);
+            }
+
         }
-        public void ChooseWeaponAttack()
+
+        public void RobotHealth()
         {
-            attackPower = 50;
-        }
-        public void TakeDamage()
-        {
             
+            health = 500;
         }
-        
+        public void RobotAttackPower()
+        {
+            attackPower = 100;
+        }
+        public void PowerLevel()
+        {
+            powerLevel = 500;
+        }
     }
+
 
 
 
