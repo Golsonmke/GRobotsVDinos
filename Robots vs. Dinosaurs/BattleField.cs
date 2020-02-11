@@ -9,18 +9,16 @@ namespace Robots_vs.Dinosaurs
     public class BattleField
     {
         // member variable (Has A)
-          public Herd  myherd;
-          public Fleet myfleet;
+          public Herd myherd = new Herd();
+          public Fleet myfleet = new Fleet();
           public List<Herd> Dinosaurs;
           public List<Fleet> Robots;
 
 
         public BattleField()
         {
-           myherd = new Herd();
-            myfleet = new Fleet();
-            List<Herd> Dinosaurs = new List<Herd>();
-            List<Fleet> Robots = new List<Fleet>();
+           
+            
              
         }
 
@@ -45,6 +43,7 @@ namespace Robots_vs.Dinosaurs
             int numberOfWrong = 0;
             do
             {
+                
                 Console.WriteLine("Choose you your team?");
                 string input = Console.ReadLine();
                 switch (input)
@@ -74,25 +73,33 @@ namespace Robots_vs.Dinosaurs
 
         public void Battle()
         {
-           
-
             Console.WriteLine("Press Enter to start battle!");
             Console.ReadLine();
+            myfleet.robots[0].Attack(myherd.dinosaurs[0]);
+            myfleet.robots[1].Attack(myherd.dinosaurs[1]);
+            myfleet.robots[2].Attack(myherd.dinosaurs[2]);
+            myherd.dinosaurs[0].DinoAttack(myfleet.robots[2]);
+            myherd.dinosaurs[1].DinoAttack(myfleet.robots[1]);
+            myherd.dinosaurs[2].DinoAttack(myfleet.robots[0]);
 
-           
-          //  for (int i = 0; i < i++) 
-          //  {
+            if(myfleet.robots.Count <= myherd.dinosaurs.Count)
+            {
+                Console.WriteLine("Dinosaurs Win");
+                Console.ReadLine();
+            }
+            else if(myherd.dinosaurs.Count <= myfleet.robots.Count)
+            {
+                Console.WriteLine("Robots Win");
 
-           // }
-                
-            
+            }
+                    
 
 
 
-           
-            
 
-            
+
+
+
 
         }
         public void  RunGame()

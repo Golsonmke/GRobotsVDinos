@@ -42,19 +42,25 @@ namespace Robots_vs.Dinosaurs
             }
 
         }
-
-        public void RobotHealth()
-        {
-            
-            health = 500;
-        }
         public void RobotAttackPower()
         {
             attackPower = 100;
         }
-        public void PowerLevel()
+        public void RobotPowerLevel()
         {
-            powerLevel = 500;
+           powerLevel = 500;
+        }
+        public void RobotHealth()
+        {
+            health = 500;
+        }
+        public void RobotIsDead()
+        {
+            isDead = false;
+        }
+        public void Attack(Dinosaur dinosaur)
+        {
+            dinosaur.health -= attackPower;
         }
     }
 

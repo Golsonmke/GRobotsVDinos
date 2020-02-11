@@ -17,20 +17,10 @@ namespace Robots_vs.Dinosaurs
         public int attackPower;
         public bool isDead;
 
-        public static int Count { get; internal set; }
-
-
-
-
-
 
 
         //constructor
-        public Dinosaur(string name,
-                        string type,
-                        int health,
-                        int energyLevel,
-                        int attackPower)
+        public Dinosaur(string name, string type, int health, int energyLevel, int attackPower)
         {
             this.name = "Name";
             this.type = "Name";
@@ -50,29 +40,26 @@ namespace Robots_vs.Dinosaurs
                 Console.WriteLine(dinoAttack);
             }
         }
-        public void AttackPower()
+        public void DinosaurAttackPower()
         {
-            
-          attackPower = 100;
-            
-
+            attackPower = 75;
         }
         public void DinosaurHealth()
         {
-            
-           health = 500;
-            if(health < 0)
-            {
-                isDead = true;
-            }
-
+            health = 500;
         }
-        public void EnergyLevel()
+        public void DinosaurEnergyLevel()
         {
             energyLevel = 500;
         }
-       
-
+        public void DinosaurIsDead()
+        {
+            isDead = false;
+        }
+        public void DinoAttack(Robot robot)
+        {
+            robot.health -= attackPower;
+        }
 
 
 
